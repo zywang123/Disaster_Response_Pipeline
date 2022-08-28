@@ -1,29 +1,19 @@
 # Disaster_Response_Pipeline
 
 ## Library Used
-- import pandas as pd
-- import numpy as np
-- import re
-- import pickle
-- from time import strptime
-- import matplotlib.pyplot as plt
-- import seaborn as sns
-- import statsmodels.api as sm
-- from sklearn.linear_model import LinearRegression
-- from sklearn import linear_model
-- from sklearn.pipeline import Pipeline
-- from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-- from sklearn.multioutput import MultiOutputClassifier
-- from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-- from sklearn.model_selection import train_test_split, GridSearchCV
-- from sklearn.metrics import classification_report
-- import nltk
-- from nltk import word_tokenize
-- from nltk.sentiment import SentimentIntensityAnalyzer
-- import operator
-- from nltk.tokenize import TweetTokenizer
-- from nltk.corpus import stopwords
-- from nltk.stem import WordNetLemmatizer
-- from nltk.stem import PorterStemmer
-- from sqlalchemy import create_engin
-- nltk.download(['stopwords', 'wordnet', 'punkt'])
+- panda
+- numpy
+- re
+- pickle
+- matplotlib
+- seaborn
+- sklearn
+- operator
+- sqlalchemy
+
+## Project Motivation
+The project goal is to categorize the disaster message. In this project, I analyzed and built a machine learning pipeline to categorize the real disaster messages so that I could send the messages to an appropriate disaster relief agency. The final web app can input a new message and then get classification results in multiple categories. 
+
+## Files Description
+1. ETL Pipeline: in the `process_data.py`
+- 
