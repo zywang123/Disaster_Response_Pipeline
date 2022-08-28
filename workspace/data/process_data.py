@@ -73,6 +73,8 @@ def clean_data(df):
         # convert column from string to numeric
         categories[column] = categories[column].astype(int)
     
+    # remove the data which related is equal to 2
+    categories = categories[categories['related'] != 2]
     # drop the original categories column from `df`
     df = df.drop(['categories'], axis = 1)
     
@@ -93,7 +95,7 @@ def save_data(df, database_filename):
     """
     
     engine = create_engine('sqlite:///{}'.format(database_filename))
-    df.to_sql('disaster_message_tbl', engine, index=False)
+    df.to_sql('disaster_message_tbl', engine, index=False, if_exists = 'replace')
 
 
 def main():
